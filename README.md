@@ -69,5 +69,6 @@ length by 2 because it is like a scaling factor that acts as a diagonal of the b
 
 Here, is the detailed analysis of how and why we use this type of calculation using equations mentioned above.
 
-<img src="">
+<img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Speed%20estimation.png" alt="MLBC">
+**Fig 1. Graphical Representation of Speed Estimation**
 
