@@ -129,4 +129,13 @@ the shown values in the table.
 | YOLOv8       | 93%           | 88%            | 86%         |
 
 
+License plate number detection is performed using Easy OCR, which offers simplicity and better accuracy compared to Tesseract OCR . Our model achieved an accuracy of 87.5% with Easy OCR, while Tesseract OCR only reached 5%. Accuracy is calculated by extracting the license plate numbers and storing them in a CSV file using the below formula.
+```
+Accuracy = (N umberof correctprediction)÷(N umberof totalpredictions)
+```
+
+
+
+
+
 
