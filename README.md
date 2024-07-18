@@ -108,3 +108,13 @@ The third task of our model is to detect the license plate number and estimate t
 <img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/License_plate.jpg" alt="MLBC">
 
 **Fig 4. Speed Estimation and License detection**
+
+The below table shows the dataset of estimated speed values with the ground truth speed of cars. Here, the actual speed value refers to the 
+original value at which the vehicle is moving, and estimated speeds mean that the speed is estimated by Faster RCNN RestNet50.
+
+|Actual Speed (kmph)|Estimated Speed (kmph)|
+|-|-|
+|20|19.918|
+|30|30.0692|
+|40|44.359|
+
