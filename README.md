@@ -39,6 +39,8 @@ values and transforming the image to a tensor then it infers the tensor
 form to detect the object along with the bounding box. The formula is
 shown in equation.
 
+<details>
+```markdown
 -  Normalized_image = (I − mean) ÷ std     
 
 **Object Classification:**
