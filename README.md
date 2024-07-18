@@ -118,3 +118,15 @@ original value at which the vehicle is moving, and estimated speeds mean that th
 |30|30.0692|
 |40|44.359|
 
+The below table refers to the three different situations of road traffic and the corresponding accuracy of the number of detected cars using Faster RCNN
+and YoLOv8. Heavy Traffic means approximately 30 vehicles in a traffic zone, for medium traffic it’s about 15 vehicles, and for low traffic 4
+or 2 vehicles. Overall the accuracy level of Faster RCNN is better than YOLOv8 model in terms of heavy, medium, or low traffic areas based on
+the shown values in the table. 
+
+| Module       | Heavy Traffic | Medium Traffic | Low Traffic |
+|--------------|---------------|----------------|-------------|
+| Faster RCNN  | 98%           | 92%            | 98%         |
+| YOLOv8       | 93%           | 88%            | 86%         |
+
+
+
