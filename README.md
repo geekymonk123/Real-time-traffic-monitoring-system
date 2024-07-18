@@ -91,11 +91,20 @@ According to the proposed algorithm (Algorithm 1) for road traffic monitoring, t
 another set of objects. Figure 2 shows that there have two vehicles in road car and auto. However, only the car is detected. For Faster RCNN the
 accuracy is 0.83 (Figure 2(a)) and YOLOv8 gives 0.42 accuracy (Figure2(b)). 
 
-<img src="" alt="MLBC">
+<img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/car.jpg" alt="MLBC">
+
+**Fig 2. Object Detection using Faster RCNN and YOLOv8**
 
 The second task is to detect the dynamic cars(i.e., moving cars). In
 Figure 3 shows the results of the classification algorithm. By applying Faster RCNN we get an accuracy of 0.94 (Figure 3(a)) and from YOLOv8
 we get an accuracy of 0.73 (Figure 3(b)). 
 
+<img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Classification.jpg" alt="MLBC">
+
+**Fig 3. Object Classification using Faster RCNN and yolov8**
+
 The third task of our model is to detect the license plate number and estimate the car’s speed, shown in Figure 4. The license plate number detection job is done by the Easy OCR model (Figure 4(a)) and the speed estimation is done by Faster RCNN (Figure 4(b)).
 
+<img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/License_plate.jpg" alt="MLBC">
+
+**Fig 4. Speed Estimation and License detection**
