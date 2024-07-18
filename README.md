@@ -39,8 +39,6 @@ values and transforming the image to a tensor then it infers the tensor
 form to detect the object along with the bounding box. The formula is
 shown in equation.
 
-<details>
-```markdown
 -  Normalized_image = (I − mean) ÷ std     
 
 **Object Classification:**
@@ -53,11 +51,19 @@ bounding boxes.
 **Speed Estimation:**
 
 After extracting the dynamic car object from the
-background we estimate the speed of the object on each frame from a
-certain distance of 1km. The following process of estimating the speed
-of the vehicle is shown in the following.
+background we estimate the speed of the object on each frame from a certain distance of 1km. The following process of estimating the speed of the vehicle is shown in the following.
 
 **1.** Here we have taken the coordinates of the bounding boxes of the
 object detected from the previous frame and current frame. and calculate the euclidean distance between the coordinates and return the
-pixel form value for further calculation
+pixel form value for further calculation.
+
+**2.** The returned value is not in a compatible format (i.e. pixel) so we convert it to meter. To do so, we multiply the focal length of the camera by 2 and divide it by pixel value. Here, we multiply the focal
+length by 2 because it is like a scaling factor that acts as a diagonal of the bounding box and in this case, it’s assumed to be a square.
+
+- distance(meters) ← (f ocallength ∗ 2) ÷ (distance_pixels)
+
+**3.** Converting the speed from meter per second to km per hour
+
+- speed(ms) ← distance(meters) ÷ time_dif f (sec) (3)
+- speed(kmph) ← speed(ms) ∗ 3.6
 
