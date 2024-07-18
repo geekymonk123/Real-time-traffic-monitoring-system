@@ -14,8 +14,8 @@ accuracy for speed estimation and 87.5% on license plate detection.
 
 ## Proposed Methodology
 To prepare a cost-effective road traffic monitoring system, a single-camera
-is used for three different tasks (i) car object detection and classification,
-(ii) speed estimation, and license plate number detection.
+is used for three different tasks **(i)** car object detection and classification,
+**(ii)** speed estimation, and license plate number detection.
 Algorithm 1 depicts how the roadside camera could estimate speed and
 license plate detection is done. Here the user needs to give the input video
 with the focal length adjusted. We first identify the key frames using
