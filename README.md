@@ -1,7 +1,5 @@
 # Real Time Traffic Monitoring using Road Side Digital Camera
-Due to the rise of private vehicles (e.g., car) makes road traffic more congested. To resolve this complex situation without man-
-ual road traffic monitoring, computer vision takes place. The dedicated
-road surveillance cameras and sensors are used as helping devices. Both
+Due to the rise of private vehicles (e.g., car) makes road traffic more congested. To resolve this complex situation without manual road traffic monitoring, computer vision takes place. The dedicated road surveillance cameras and sensors are used as helping devices. Both
 are costly. However, we are using the road side digital camera for road
 traffic monitoring. Our research work mainly focused on vehicle detec-
 tion along with the speed estimation and license plate detection with
