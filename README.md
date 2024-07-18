@@ -70,7 +70,8 @@ speed(kmph) ← speed(ms) ∗ 3.6
 Here, is the detailed analysis of how and why we use this type of calculation using equations mentioned above.
 
 <img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Speed%20estimation.png" alt="MLBC">
-Fig 1. Graphical Representation of Speed Estimation.
+
+**Fig 1. Graphical Representation of Speed Estimation.**
 
 Our model calculates vehicle speed using camera data and focal length calibration. Given a car's movement from position (x1, y1) to (x2, y2) over time t2, we first determine the distance between these points using Euclidean distance in pixels. We convert this pixel distance to meters using a camera calibration with a 1000-meter focal length. A scaling factor of 2 is applied for more accurate speed estimation, based on the bounding box's diagonal.
 
