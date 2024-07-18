@@ -1,6 +1,5 @@
-# Real-time-traffic-monitoring-system
-Due to the rise of private vehicles (e.g., car) makes road
-traffic more congested. To resolve this complex situation without man-
+# Real Time Traffic Monitoring using Road Side Digital Camera
+Due to the rise of private vehicles (e.g., car) makes road traffic more congested. To resolve this complex situation without man-
 ual road traffic monitoring, computer vision takes place. The dedicated
 road surveillance cameras and sensors are used as helping devices. Both
 are costly. However, we are using the road side digital camera for road
@@ -12,3 +11,18 @@ detection we use easy optical character recognition (OCR) system to ex-
 tract the alphanumeric characters. Here we trained and tested our model
 on 3 different scenarios and over 30 vehicles and get a result of 93.7%
 accuracy for speed estimation and 87.5% on license plate detection.
+
+## Proposed Methodology
+To prepare a cost-effective road traffic monitoring system, a single-camera
+is used for three different tasks (i) car object detection and classification,
+(ii) speed estimation, and license plate number detection.
+Algorithm 1 depicts how the roadside camera could estimate speed and
+license plate detection is done. Here the user needs to give the input video
+with the focal length adjusted. We first identify the key frames using
+the entropy of the frames. If the frame is a key frame then process the
+frame and do the following sub-actions. Firstly, detect the car object and
+classify whether static or dynamic. Secondly, for each vehicle detected
+estimate the speed, and thirdly, detect the license plate number for that
+vehicle. The detailed explanation of above 3 sub-actions are explained in
+detail in the below paragraphs.
+
