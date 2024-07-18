@@ -30,3 +30,12 @@ detail in the below paragraphs.
 
 <img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Algorithm.jpg" alt="MLBC">
 
+**Object Detection:**
+It detects the car object from each frame by using a
+pre-trained Faster RCNN model on the car object. Here it takes an input
+image then it resized, and normalizes the image i.e. adjusting the pixel
+values and transforming the image to a tensor then it infers the tensor
+form to detect the object along with the bounding box. The formula is
+shown in equation 1.
+Normalized_image = (I − mean) ÷ std    (1)
+
