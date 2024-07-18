@@ -37,7 +37,25 @@ pre-trained Faster RCNN model on the car object. Here it takes an input
 image then it resized, and normalizes the image i.e. adjusting the pixel
 values and transforming the image to a tensor then it infers the tensor
 form to detect the object along with the bounding box. The formula is
-shown in equation 1.
+shown in equation.
 
-Normalized_image = (I − mean) ÷ std               (1)
+-  Normalized_image = (I − mean) ÷ std     
+
+**Object Classification:**
+
+After detecting the car object now we have to
+classify them as they are static or dynamic for static no bounding boxes
+are there but for dynamic movement of the vehicles are bounded with
+bounding boxes.
+
+**Speed Estimation:**
+
+After extracting the dynamic car object from the
+background we estimate the speed of the object on each frame from a
+certain distance of 1km. The following process of estimating the speed
+of the vehicle is shown in the following.
+
+**1.** Here we have taken the coordinates of the bounding boxes of the
+object detected from the previous frame and current frame. and calculate the euclidean distance between the coordinates and return the
+pixel form value for further calculation
 
