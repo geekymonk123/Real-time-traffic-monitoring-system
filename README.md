@@ -72,3 +72,32 @@ Here, is the detailed analysis of how and why we use this type of calculation us
 <img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Speed%20estimation.png" alt="MLBC">
 Fig 1. Graphical Representation of Speed Estimation
 
+Our model is very simple to handle the situation with the help of only
+camera and camera calibration settings that are only the focal length.
+So, let’s explain how it does so from Figure 1 it is shown that a car object
+was at position (x1,y1) and traversed to (x2,y2) at time t2. here we could
+easily find the distance between the two coordinates using the Euclidean
+distance. Here we calculated the distance between the coordinates in
+pixel format.
+Then we need to convert it to a meter to meet with the real-world scenario. To do so we adjust the camera calibration with a focal length of
+1km or 1000 meters. We then use this here to calculate the distance in
+meters.
+The reason to use the factor 2 is the empirical adjustment of the setup to
+make more accuracy while estimating the speed of the vehicle. We may assume that it’s a scaling factor of the diagonal of the bounding box of
+the object to be a square for easy interpretation. Then we calculate the speed in meter per sec. here we estimate the time difference of the object
+to traverse from the coordinate from(x1,y1) to (x2,y2). Then we convert it into km per hour. For that object, the following license plate number
+is also detected. This is not only for a single vehicle but also for multiple vehicles.
+
+**License Number plate Detection:** In this paragraph, we will discuss how we estimate the license number plate prediction. Here we used the
+Easy OCR model rather than the Tesseract model because of its simplicity and more accurate results which is explained in result section. Here it extract the ROI(Region of Interest) from the input image and converts it to a grayscale image. Easy OCR model extracts the optical
+character from the image and returns the license number as the string. For converting RGB to Gray Scale it uses the formula.
+```
+Igray = 0.299R + 0.587G + 0.114B
+```
+The returned string is verified with some constraints mentioned like
+whether the length of the string is greater than 6 and it is alphanumeric
+format.
+
+## Experimental Result
+
+
