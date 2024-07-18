@@ -59,16 +59,16 @@ pixel form value for further calculation.
 
 **2.** The returned value is not in a compatible format (i.e. pixel) so we convert it to meter. To do so, we multiply the focal length of the camera by 2 and divide it by pixel value. Here, we multiply the focal
 length by 2 because it is like a scaling factor that acts as a diagonal of the bounding box and in this case, it’s assumed to be a square.
-
-- distance(meters) ← (focallength ∗ 2) ÷ (distance_pixels)
-
+```
+ distance(meters) ← (focallength ∗ 2) ÷ (distance_pixels)
+```
 **3.** Converting the speed from meter per second to km per hour
-
-- speed(ms) ← distance(meters) ÷ time_dif f (sec) (3)
-- speed(kmph) ← speed(ms) ∗ 3.6
-
+```
+speed(ms) ← distance(meters) ÷ time_dif f (sec) (3)
+speed(kmph) ← speed(ms) ∗ 3.6
+```
 Here, is the detailed analysis of how and why we use this type of calculation using equations mentioned above.
 
 <img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Speed%20estimation.png" alt="MLBC">
-**Fig 1. Graphical Representation of Speed Estimation**
+Fig 1. Graphical Representation of Speed Estimation
 
