@@ -24,5 +24,5 @@ estimate the speed, and thirdly, detect the license plate number for that
 vehicle. The detailed explanation of above 3 sub-actions are explained in
 detail in the below paragraphs.
 
-<img href="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Algorithm.jpg" alt="MLBC">
+<img src="https://github.com/geekymonk123/Real-time-traffic-monitoring-system/blob/main/Algorithm.jpg" alt="MLBC">
 
